@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-
-@media only screen and (min-width: 375px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -176,8 +174,6 @@
     .back-div {
         display: none;
     }
-    
-}
 
 @media only screen and (min-width: 1024px) {
     body{
@@ -190,8 +186,8 @@
         background-color: white;
         border-radius: 15px 0px 0px 15px;
         position: absolute;
-        top: 4rem;
-        left: 15rem;
+        top: 3rem;
+        left: 15.5rem;
         height: 580px;
         width: 650px;
         z-index: 0;
@@ -200,7 +196,7 @@
     .calculator-div{
         display: flex;
         flex-direction: column;
-        padding: 4rem 0rem 0rem 16rem;
+        padding: 4rem 0rem 0rem 16.5rem;
         position: relative;
         z-index: 1;
     }
@@ -209,26 +205,24 @@
         width: 38%;
     }
 
-
     .amount-input, .term-input, .rate-input, .repayment-div, .interest-div, .repayment-label, .interest-label, .repayment-input, .interest-input{
         cursor: pointer;
     }
 
-    .input-prefix{
-        top: 67.5%;
-        padding: 14px 16px 17px 13px;
+    .term-input, .term-div, .rate-div, .rate-input{
+        width: 50.5%;
+    }
+
+    .rate-div{
+        right: 3rem;
     }
 
     .input-prefix2{
-        top: 67.5%;
-        left: 9.1rem;
-        padding: 14px 16px 16px 13px;
+      right: 10.2rem;
     }
 
     .input-prefix3{
-        top: 67.5%;
-        left: 13.7rem;
-        padding: 14px 16px 16px 13px;
+       right: 7.2rem;
     }
 
     .rate-p{
@@ -248,11 +242,11 @@
 
     .result-div, .result-display-div{
         position: relative;
-        left: 51rem;
-        top: -35.9rem;
+        left: 52rem;
+        top: -40.4rem;
         padding: 3rem;
-        width: 25%;
-        height: 485px;
+        width: 30%;
+        height: 580px;
         border-radius: 0rem 10px 10px 50px;
     }
 
@@ -261,13 +255,14 @@
     }
 
     .calculator-img{
-        top: 3.2rem;
-        left: 4rem;
         width: 20px;
     }
 
     .calculate-btn{
         width: 25%;
+        font-weight: 600;
+        position: relative;
+        left: 22rem;
         text-indent: 15px;
     } 
 }
