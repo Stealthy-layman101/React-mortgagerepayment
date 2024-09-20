@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Iconcalculator from './assets/IconCalculator.svg';
+import Iconcalculator from './assets/Iconcalculator.svg';
 import Emptyimg from './assets/Emptyimg.svg';
 
 function Mortgage(){
