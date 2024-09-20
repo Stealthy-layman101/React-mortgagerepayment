@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+@media only screen and (min-width: 375px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Plus Jakarta Sans';
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+    }
+    
+    .calculator-div {
+        padding: 1rem;
+    }
+    
+    .header {
+        color: hsl(202, 55%, 16%);
+        font-weight: 700;
+        font-size: 25px;
+    }
+    
+    .clear-p {
+        text-decoration: underline;
+        color: hsl(200, 26%, 54%);
+        font-weight: 700;
+        padding-top: 1rem;
+    }
+    
+    .amount-p, .term-p, .rate-p, .type-p {
+        color: hsl(200, 26%, 54%);
+        font-weight: 600;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .amount-div, .term-div, .rate-div {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .amount-input, .term-input, .rate-input, .repayment-div, .interest-div {
+        border: 1px solid hsl(200, 26%, 54%);
+        color: hsl(200, 57%, 20%);
+        border-radius: 5px;
+        padding: 1rem;
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+    }
+    
+    .input-prefix{
+        position: absolute;
+        top: 75%;
+        left: 1px;
+        transform: translateY(-50%);
+        background-color: hsl(202, 86%, 94%);
+        padding: 15px 16px 15px 13px;
+        border-radius: 5px 0px 0px 5px;
+        font-size: 16px;
+        font-weight: 700;
+        color: hsl(200, 24%, 40%);
+        z-index: 1;
+    }
+    
+    .input-prefix2, .input-prefix3 {
+        position: absolute;
+        right: 1px; /* Position the prefix on the right */
+        top: 75%;
+        transform: translateY(-50%); /* Vertically center the prefix */
+        background-color: hsl(202, 86%, 94%);
+        padding: 15px;
+        border-radius: 0 5px 5px 0; /* Match the border-radius with the input's right side */
+        font-size: 16px;
+        font-weight: 700;
+        color: hsl(200, 24%, 40%);
+        z-index: 1;
+    }
+    
+    .repayment-div, .interest-div {
+        width: 100%; /* Changed to 100% to fit container */
+    }
+    
+    .repayment-label, .interest-label {
+        margin-left: 1rem;
+        color: hsl(200, 57%, 17%);
+        font-weight: 700;
+    }
+    
+    .calculate-btn {
+        border: none;
+        width: 100%; /* Changed to fit container */
+        border-radius: 25px;
+        padding: 1rem; 
+        margin-top: 1rem;
+        background-color: hsl(61, 70%, 52%);
+        color: hsl(202, 55%, 16%);
+        font-weight: 900;
+        font-size: 16px;
+    }    
+    
+    .calculate-btn:hover, .clear-p:hover {
+        cursor: pointer;
+    }
+    
+    .calculator-img {
+        position: relative;
+        top: 4px;
+        right: 5px;
+    }
+    
+    .result-div, .result-display-div {
+        background-color: hsl(202, 55%, 16%);
+        text-align: center;
+        padding: 2rem;
+        max-width: 100%; /* Prevents overflow */
+    }
+    
+    .result-p, .display-p, .display-p5 {
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 5px;
+    }
+    
+    .result-p2, .display-p2, .display-p3, .display-p4 {
+        color: hsl(210, 6%, 75%);
+        font-weight: 500;
+        padding: 5px;
+    }
+    
+    .result-display-div {
+        display: none;
+        text-align: left;
+    }
+    
+    .aesthetic {
+        max-width: 100%;
+        background-color: hsl(61, 70%, 52%);
+        height: 15px;
+        border-radius: 10px;
+        position: relative;
+        left: 0.1rem;
+        top: 0.7rem;
+        z-index: 1;
+    }
+    
+    .result-display {
+        position: relative;
+        z-index: 2;
+        padding: 1rem;
+        border: 1px solid hsl(202, 55%, 16%);
+        border-radius: 10px;
+        background-color: hsl(200, 88%, 7%);
+        width: 100%;
+    }
+    
+    .monthly-result {
+        font-size: 3rem;
+        font-weight: 700;
+        color: hsl(61, 70%, 52%);
+        margin: -0.5rem 0rem 0.5rem 0rem;
+    }
+    
+    .display-p5 {
+        margin-top: -0.4rem;
+    }
+    
+    .back-div {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    body{
+        background-color: hsl(202, 86%, 94%);
+        overflow-y: hidden;
+    }
+
+    .back-div{
+        display: block;
+        background-color: white;
+        border-radius: 15px 0px 0px 15px;
+        position: absolute;
+        top: 4rem;
+        left: 15rem;
+        height: 580px;
+        width: 650px;
+        z-index: 0;
+    }
+ 
+    .calculator-div{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 0rem 0rem 16rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .amount-input, .repayment-div, .interest-div{
+        width: 38%;
+    }
+
+
+    .amount-input, .term-input, .rate-input, .repayment-div, .interest-div, .repayment-label, .interest-label, .repayment-input, .interest-input{
+        cursor: pointer;
+    }
+
+    .input-prefix{
+        top: 67.5%;
+        padding: 14px 16px 17px 13px;
+    }
+
+    .input-prefix2{
+        top: 67.5%;
+        left: 9.1rem;
+        padding: 14px 16px 16px 13px;
+    }
+
+    .input-prefix3{
+        top: 67.5%;
+        left: 13.7rem;
+        padding: 14px 16px 16px 13px;
+    }
+
+    .rate-p{
+        position: relative;
+        left: 3rem;
+    }
+
+    .rate-input{
+        position: relative;
+        left: 3rem;
+        width: 75%;
+    }
+
+    .term-input{
+        width: 75%;
+    }
+
+    .result-div, .result-display-div{
+        position: relative;
+        left: 51rem;
+        top: -35.9rem;
+        padding: 3rem;
+        width: 25%;
+        height: 485px;
+        border-radius: 0rem 10px 10px 50px;
+    }
+
+    .empty-img{
+        height: 300px;
+    }
+
+    .calculator-img{
+        top: 3.2rem;
+        left: 4rem;
+        width: 20px;
+    }
+
+    .calculate-btn{
+        width: 25%;
+        text-indent: 15px;
+    } 
+}
