@@ -1,4 +1,4 @@
-import Mortgage from "./mortgage"
+import Mortgage from "./Mortgage"
 
 
 function App() {
